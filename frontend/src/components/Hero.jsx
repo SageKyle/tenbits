@@ -8,7 +8,7 @@ export default function Hero() {
 	return (
 		<section className="w-full h-screen ">
 			<Navbar />
-			<article className="flex gap-4 flex-wrap justify-between items-center p-8 bg-[#f1f2ff]">
+			<article className="flex gap-4 flex-wrap justify-between items-center p-8 bg-accent">
 				<Image src={HeroImage} className="w-1/2 h-auto" />
 				<div className="flex flex-col gap-2 w-[45%]">
 					<p className="mb-4">
