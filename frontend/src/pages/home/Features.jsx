@@ -1,4 +1,5 @@
 import shopIcon from '@/assets/icons/shop.svg'
+import CirclePattern from '@/assets/images/demo_circle.svg'
 import PrimaryBtn from '@/components/PrimaryBtn'
 import Image from 'next/image'
 
@@ -15,11 +16,12 @@ export default function Features() {
 			<section className="flex items-center justify-start gap-4 flex-wrap my-12">
 				<div className="w-[28%] bg-slate-200 p-4 rounded-lg">
 					<Image
-						src={shopIcon}
+						src={CirclePattern}
 						height={30}
 						width={30}
 						objectFit="fill"
 						loading="lazy"
+						className="bg-primary p-4"
 					/>
 					<p className="mt-4">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus,

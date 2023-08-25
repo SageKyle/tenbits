@@ -5,7 +5,7 @@ import PrimaryBtn from './PrimaryBtn'
 
 export default function Navbar() {
 	return (
-		<nav className="w-full flex items-center justify-between py-4 px-10">
+		<nav className="w-full flex items-center justify-between py-4 px-10 bg-white">
 			<Link href={'/'} className="relative inline-block w-14 h-14">
 				<Image
 					src={Logo}
