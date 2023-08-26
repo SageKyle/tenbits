@@ -1,10 +1,27 @@
+'use client'
+
 import InfoIcon from '@/assets/icons/info.svg'
 import Navbar from '@/components/Navbar'
 import PrimaryBtn from '@/components/PrimaryBtn'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
+import { HiOutlineEye, HiOutlineEyeOff } from 'react-icons/hi'
 
 export default function Register() {
+	const [formData, setFormData] = useState({
+		userName: '',
+		firstName: '',
+		lastName: '',
+		email: '',
+		password: '',
+	})
+	const [showPassword, setShowPassword] = useState(false)
+
+	function handleChange(e) {
+		setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+	}
+
 	return (
 		<>
 			<Navbar />
@@ -23,6 +40,9 @@ export default function Register() {
 								type="text"
 								placeholder="Enter your first name"
 								required
+								name="firstName"
+								value={formData.firstName}
+								onChange={handleChange}
 								className="p-4 w-full rounded-md bg-accent placeholder:capitalize placeholder:text-lg"
 							/>
 						</label>
@@ -34,6 +54,9 @@ export default function Register() {
 								type="text"
 								placeholder="Enter your last name"
 								required
+								name="lastName"
+								value={formData.lastName}
+								onChange={handleChange}
 								className="p-4 w-full rounded-md bg-accent placeholder:capitalize placeholder:text-lg"
 							/>
 						</label>
@@ -45,6 +68,9 @@ export default function Register() {
 								type="email"
 								placeholder="Enter your email address"
 								required
+								name="email"
+								value={formData.email}
+								onChange={handleChange}
 								className="p-4 w-full rounded-md bg-accent placeholder:capitalize placeholder:text-lg"
 							/>
 						</label>
@@ -56,6 +82,9 @@ export default function Register() {
 								type="text"
 								placeholder="Enter your username"
 								required
+								name="userName"
+								value={formData.userName}
+								onChange={handleChange}
 								className="p-4 w-full rounded-md bg-accent placeholder:capitalize placeholder:text-lg"
 							/>
 							<small className="inline-block text-xs lowercase bg-white">
@@ -69,16 +98,31 @@ export default function Register() {
 								least 4 characters
 							</small>
 						</label>
-						<label className="flex flex-col space-y-2 w-full">
+						<label className="flex flex-col space-y-2 w-full relative">
 							<span className="capitalize text-slate-500 text-lg">
 								password
 							</span>
 							<input
-								type="text"
+								type={showPassword ? 'text' : 'password'}
 								placeholder="Enter your username password"
 								required
+								name="password"
+								value={formData.password}
+								onChange={handleChange}
 								className="p-4 w-full rounded-md bg-accent placeholder:capitalize placeholder:text-lg"
 							/>
+							<div className="ml-auto mr-2 inline-block cursor-pointer absolute top-1/2 right-0 text-2xl">
+								{showPassword && (
+									<HiOutlineEye
+										onClick={() => setShowPassword((prev) => !prev)}
+									/>
+								)}
+								{!showPassword && (
+									<HiOutlineEyeOff
+										onClick={() => setShowPassword((prev) => !prev)}
+									/>
+								)}
+							</div>
 						</label>
 						{/* <div className="w-full"> */}
 						<PrimaryBtn
@@ -89,7 +133,7 @@ export default function Register() {
 						{/* </div> */}
 						<small className="flex items-center justify-between mt-8 text-secondary text-base">
 							<span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
-							<Link href="/login" className="hover:underline">
+							<Link href="login" className="hover:underline">
 								Already have an account?
 							</Link>
 							<span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>

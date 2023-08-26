@@ -9,6 +9,7 @@ export default function Footer() {
 				<Image src={Logo} height={50} width={50} alt="TenBits logo" />
 			</Link>
 			<h4>This is the footer</h4>
+			<p>&copy; copyright {new Date().getFullYear()}</p>
 		</footer>
 	)
 }

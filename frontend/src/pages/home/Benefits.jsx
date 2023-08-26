@@ -12,8 +12,8 @@ export default function Benefits() {
 				Here are some of the amazing benefits you stand to gain by using{' '}
 				<span className="text-primary font-bold">TenBits</span>
 			</p>
-			<section className="flex items-center justify-start gap-4 flex-wrap my-12">
-				<div className="w-[28%] bg-accent p-4 rounded-lg">
+			<section className="grid items-center justify-start gap-4 my-12">
+				<div className="bg-accent p-4 rounded-lg">
 					<Image
 						src={shopIcon}
 						height={30}
@@ -27,7 +27,7 @@ export default function Benefits() {
 						nam sunt non, recusandae cum exercitationem minima illo.
 					</p>
 				</div>
-				<div className="w-[28%] bg-accent p-4 rounded-lg">
+				<div className="bg-accent p-4 rounded-lg">
 					<Image
 						src={shopIcon}
 						height={30}
@@ -41,7 +41,7 @@ export default function Benefits() {
 						nam sunt non, recusandae cum exercitationem minima illo.
 					</p>
 				</div>
-				<div className="w-[28%] bg-accent p-4 rounded-lg">
+				<div className="bg-accent p-4 rounded-lg">
 					<Image
 						src={shopIcon}
 						height={30}
@@ -55,7 +55,7 @@ export default function Benefits() {
 						nam sunt non, recusandae cum exercitationem minima illo.
 					</p>
 				</div>
-				<div className="w-[28%] bg-accent p-4 rounded-lg">
+				<div className="bg-accent p-4 rounded-lg">
 					<Image
 						src={shopIcon}
 						height={30}
