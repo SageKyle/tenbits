@@ -73,11 +73,11 @@ export default function Login() {
 						/>
 						{/* </div> */}
 						<small className="flex items-center justify-between mt-8 text-secondary text-base">
-							<span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+							<span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
 							<Link href="register" className="hover:underline">
 								Don't have an account?
 							</Link>
-							<span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+							<span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
 						</small>
 					</form>
 				</article>
