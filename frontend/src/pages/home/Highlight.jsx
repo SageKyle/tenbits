@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Highlight() {
 	return (
 		<article className="w-full my-14">
-			<h3 className="text-primary text-2xl font-semibold ml-6 mb-2 capitalize">
+			<h3 className="text-primary text-xs font-bold ml-6 mb-2 capitalize">
 				the power of e-commerce
 			</h3>
 			<small className="mb-6 block mx-6 ">
