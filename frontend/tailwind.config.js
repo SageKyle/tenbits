@@ -12,6 +12,7 @@ module.exports = {
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'feature-pattern': "url('/assets/images/demo_circle.svg')",
+				'hero-bg': "url('/assets/fashion-designer-answering-call.webp')",
 			},
 			colors: {
 				primary: {
