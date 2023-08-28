@@ -13,6 +13,8 @@ module.exports = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'feature-pattern': "url('/assets/images/demo_circle.svg')",
 				'hero-bg': "url('/assets/fashion-designer-answering-call.webp')",
+				'hero-bg-wide': "url('/assets/black-owned-small-business-open.webp')",
+				'purple-lines': "url('/assets/circle.svg')",
 			},
 			colors: {
 				primary: {
@@ -21,6 +23,9 @@ module.exports = {
 				},
 				secondary: {
 					DEFAULT: '#70d6f8',
+				},
+				orange: {
+					DEFAULT: '#f97316',
 				},
 				accent: {
 					DEFAULT: '#f1f2ff',

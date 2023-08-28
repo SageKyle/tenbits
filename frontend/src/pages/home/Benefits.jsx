@@ -7,9 +7,9 @@ import { FaHandshake } from 'react-icons/fa'
 
 export default function Benefits() {
 	return (
-		<article className="p-10">
-			<h3 className="text-primary text-xs font-bold capitalize mb-3">
-				What TenBits offers
+		<article className="p-10 block relative my-8 bg-purple-lines bg-no-repeat bg-contain bg-right bg-blend-screen opacity-90 lg:mt-14">
+			<h3 className="text-orange text-xs font-bold capitalize mb-3">
+				The TenBits experience
 			</h3>
 			<p>
 				Here are some of the amazing benefits your

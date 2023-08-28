@@ -5,8 +5,8 @@ import { TbTruckDelivery } from 'react-icons/tb'
 
 export default function ComingSoon() {
 	return (
-		<article className="container p-10">
-			<h3 className="text-secondary text-xs font-bold capitalize mb-3">
+		<article className="p-10">
+			<h3 className="text-orange-500 text-xs font-bold capitalize mb-3">
 				coming soon
 			</h3>
 			<p>More features on the way!</p>

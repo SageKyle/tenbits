@@ -6,11 +6,11 @@ import { TbSocial } from 'react-icons/tb'
 
 export default function Features() {
 	return (
-		<article className="container p-10 block relative bg-accent z-[2]">
+		<article className="p-10 block relative bg-accent z-[2]">
 			{/* background clip path */}
-			<div className="absolute block z-[-1] inset-0 bg-primary [clip-path:polygon(0_4%,_100%_0%,_100%_85%,_0%_100%)]"></div>
+			<div className="absolute block z-[-1] inset-0 bg-primary [clip-path:polygon(0_4%,_100%_0%,_100%_85%,_0%_100%)] md:bg-purple-lines bg-no-repeat bg-contain bg-right bg-blend-screen opacity-90"></div>
 
-			<h3 className="text-secondary text-xs font-bold capitalize mb-3">
+			<h3 className="text-orange text-xs font-bold capitalize mb-3">
 				What makes TenBits stand out
 			</h3>
 			<p className="text-white">
