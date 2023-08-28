@@ -16,7 +16,7 @@ export default function Benefits() {
 				<span className="text-primary font-semibold"> TenBits e-Store </span>
 				gives you.
 			</p>
-			<section className="grid items-center justify-start gap-8 my-12">
+			<section className="grid grid-cols-[repeat(auto-fit,_minmax(20rem,1fr))] gap-8 my-12">
 				<div className="bg-slate-50 p-4 rounded-md">
 					<Image
 						src={fastIcon}
@@ -35,7 +35,7 @@ export default function Benefits() {
 					</p>
 				</div>
 				<div className="bg-slate-50 p-4 rounded-md">
-					<div className="border border-primary p-2 rounded-sm flex w-fit">
+					<div className="border border-primary p-2 aspect-square rounded-full flex w-fit">
 						<Image
 							src={reachIcon}
 							height={30}
