@@ -7,11 +7,23 @@ export default function ComingSoon() {
 	return (
 		<article className="p-10">
 			<h3 className="text-orange-500 text-xs font-bold capitalize mb-3">
-				coming soon
+				More features on the way!
 			</h3>
-			<p>More features on the way!</p>
+			<p className="text-xs">
+				We are launching with just the basic features you need to showcase your
+				products to your potential customers. However, soon you will be able to
+				fully manage both your offline and online store using your e-Store.
+			</p>
+			<p className="text-xs">
+				We are working on more features to help you easily customize your store
+				to your taste, manage your sales, and keep records of your products in
+				real-time.
+			</p>
+			<p className="text-xs mt-2">
+				Here are some features coming very soon to TenBits
+			</p>
 			<section className="grid grid-cols-[repeat(auto-fit,_minmax(20rem,1fr))] gap-8 my-12">
-				<div className="bg-slate-50 p-4 rounded-md">
+				<div className="bg-slate-50 p-4 rounded-md relative">
 					{/* <Image
 						src={fastIcon}
 						height={30}
@@ -19,6 +31,9 @@ export default function ComingSoon() {
 						objectFit="fill"
 						loading="lazy"
 					/> */}
+					<small className="inline-block text-xs capitalize absolute right-0 top-0 px-1 text-accent bg-secondary shadow text-semibold">
+						coming soon
+					</small>
 					<div className="text-primary border border-primary p-2 rounded flex w-fit">
 						<TbTruckDelivery className="text-2xl " />
 					</div>
@@ -31,7 +46,10 @@ export default function ComingSoon() {
 						customers.
 					</p>
 				</div>
-				<div className="bg-slate-50 p-4 rounded-md">
+				<div className="bg-slate-50 p-4 rounded-md relative">
+					<small className="inline-block text-xs capitalize absolute right-0 top-0 px-1 text-accent bg-secondary shadow text-semibold">
+						coming soon
+					</small>
 					<div className="border border-primary p-2 rounded-sm flex w-fit">
 						<div className="text-primary flex w-fit">
 							<DiGoogleAnalytics className="text-2xl " />
@@ -46,7 +64,10 @@ export default function ComingSoon() {
 						your online business.
 					</p>
 				</div>
-				<div className="bg-slate-50 p-4 rounded-md">
+				<div className="bg-slate-50 p-4 rounded-md relative">
+					<small className="inline-block text-xs capitalize absolute right-0 top-0 px-1 text-accent bg-secondary shadow text-semibold">
+						coming soon
+					</small>
 					<div className="text-primary border border-primary p-2 rounded flex w-fit">
 						<GiReceiveMoney className="text-2xl " />
 					</div>
