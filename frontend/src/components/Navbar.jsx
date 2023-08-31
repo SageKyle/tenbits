@@ -22,11 +22,11 @@ export default function Navbar() {
 				/>
 			</Link>
 			<div
-				className={`absolute text-center right-0 top-14 rounded-md w-3/5 flex flex-col items-center bg-white py-6 px-12 transition-all duration-500 ease-in-out ${
+				className={`absolute text-center right-0 top-14 rounded-md w-3/5 flex flex-col items-center bg-white py-6 px-12 shadow-sm transition-all duration-500 ease-in-out ${
 					showNav
 						? 'translate-y-0 z-[2]'
 						: 'translate-y-[-25rem] z-[-2] lg:translate-y-0 lg:z-[2]'
-				} lg:static lg:flex-row lg:gap-4 lg:px-4 lg:py-4 lg:justify-between`}
+				} lg:static lg:flex-row lg:gap-4 lg:px-4 lg:py-4 lg:justify-between lg:shadow-none`}
 			>
 				<ul className="flex flex-col items-center gap-2 lg:flex-row lg:mr-16">
 					<li className="hover:underline transition-all duration-200 ease-in-out">
