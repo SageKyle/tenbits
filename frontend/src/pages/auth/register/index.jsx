@@ -26,7 +26,7 @@ export default function Register() {
 		<>
 			<Navbar />
 			<section className="min-h-screen py-10 bg-slate-50">
-				<article className="flex flex-col items-center justify-center gap-4 bg-white mx-auto w-fit min-w-[30rem] p-8  shadow-md rounded-lg">
+				<article className="flex flex-col items-center justify-center gap-4 bg-white mx-auto w-full max-w-[30rem] p-8  shadow-md md:rounded-lg">
 					<h1 className="text-2xl font-bold capitalize text-primary-dark mb-2">
 						sign up
 					</h1>
@@ -131,12 +131,12 @@ export default function Register() {
 							text={'Next'}
 						/>
 						{/* </div> */}
-						<small className="flex items-center justify-between mt-8 text-secondary text-base">
-							<span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
-							<Link href="login" className="hover:underline">
+						<small className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center justify-between mt-2 text-secondary text-base before:inline-block before:border-b before:border-gray-300 after:inline-block after:border-b after:border-gray-300">
+							{/* <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span> */}
+							<Link href="login" className="hover:underline inline-block">
 								Already have an account?
 							</Link>
-							<span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+							{/* <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span> */}
 						</small>
 					</form>
 				</article>

@@ -1,5 +1,5 @@
 import shopIcon from '@/assets/icons/shop.svg'
-import PrimaryBtn from '@/components/PrimaryBtn'
+// import PrimaryBtn from '@/components/PrimaryBtn'
 import Image from 'next/image'
 import { IoPulseOutline, IoShareSocial } from 'react-icons/io5'
 import { TbSocial } from 'react-icons/tb'

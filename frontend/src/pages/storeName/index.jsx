@@ -1,9 +1,9 @@
 import Logo from '@/assets/images/tenbit-no-bg.png'
 import Navbar from './Navbar'
 
-export async function getServerSideProps() {}
+// export async function getServerSideProps() {}
 
-export async function getStaticPaths() {}
+// export async function getStaticPaths() {}
 
 export default function StoreName() {
 	return (
