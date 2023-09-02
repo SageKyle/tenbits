@@ -25,3 +25,5 @@ export default function Store() {
 		</section>
 	)
 }
+
+// TODO change parent folder name to <create-store>

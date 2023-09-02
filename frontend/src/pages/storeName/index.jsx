@@ -1,5 +1,5 @@
 import Logo from '@/assets/images/tenbit-no-bg.png'
-import Navbar from './Navbar'
+import StoreNavbar from './StoreNavbar'
 
 // export async function getServerSideProps() {}
 
@@ -8,7 +8,7 @@ import Navbar from './Navbar'
 export default function StoreName() {
 	return (
 		<article>
-			<Navbar logo={Logo} />
+			<StoreNavbar logo={Logo} />
 			<h2>Store name</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
