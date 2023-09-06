@@ -5,7 +5,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import StoreFooter from '../storeName/StoreFooter'
 import StoreNavbar from '../storeName/StoreNavbar'
+import About from './About'
 import FeaturedProducts from './FeaturedProducts'
+import HotDeals from './HotDeals'
+import LatestProducts from './LatestProducts'
+import TopCategories from './TopCategories'
 
 const storeCredentials = {
 	name: 'TenBits e-Store',
@@ -50,6 +54,10 @@ export default function Store() {
 				</article>
 			</section>
 			<FeaturedProducts />
+			<TopCategories />
+			<HotDeals />
+			<LatestProducts />
+			<About />
 			<StoreFooter logo={storeCredentials.logo} name={storeCredentials.name} />
 		</>
 	)

@@ -33,7 +33,10 @@ export default function StoreFooter({ logo, name }) {
 					</li>
 				</ul>
 			</section>
-			<Link href={'/'} className="flex mx-auto w-fit gap-1 font-medium my-2">
+			<Link
+				href={'/'}
+				className="flex mx-auto w-fit gap-1 text-base font-medium my-2"
+			>
 				Powered by <span className="font-bold text-primary-dark">TenBits</span>
 			</Link>
 			<p className="w-full text-center text-sm my-2">
