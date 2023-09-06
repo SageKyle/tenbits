@@ -6,12 +6,12 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 export default function LatestProducts() {
 	return (
 		<section className="w-4/5 mx-auto relative my-20">
-			<h3 className="text-primary mb-6  capitalize text-2xl font-bold">
+			<h3 className="text-primary mb-6 capitalize text-lg md:text-2xl font-bold">
 				latest products
 			</h3>
 			<Link
 				href={'e-store/products'}
-				className="flex items-center gap-1 absolute right-0 top-0 capitalize font-semibold hover:text-orange underline hover:gap-2 transition-all ease-in-out duration-200"
+				className="flex items-center gap-1 absolute right-0 top-1 capitalize text-xs sm:text-sm font-semibold hover:text-orange underline hover:gap-2 transition-all ease-in-out duration-200"
 			>
 				view all products <HiArrowLongRight />
 			</Link>

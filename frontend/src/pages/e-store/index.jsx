@@ -37,19 +37,20 @@ export default function Store() {
 			</Head>
 			<StoreNavbar logo={storeCredentials.logo} name={storeCredentials.name} />
 
-			<section>
-				<article className="min-h-[25rem] pb-6 flex justify-center items-end bg-hero-bg bg-no-repeat bg-cover bg-center bg-black bg-blend-screen opacity-90 relative lg:min-h-[85vh] lg:bg-hero-bg-wide lg:justify-end ">
-					<div className="flex items-center flex-col gap-2 h-full w-3/4 px-6 pt-2 pb-6 bg-primary rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-slate-500 lg:w-1/2 lg:mx-auto lg:h-fit">
-						<h3 className="text-primary-dark text-xl mx-auto my-6 capitalize font-bold self-start">
+			<section className="w-full">
+				<article className=" w-full bg-accent py-6 flex flex-col-reverse justify-evenly items-center lg:flex-row">
+					<div className="flex items-center flex-col mt-6 w-[90%] pt-2 pb-6 lg:pl-8 lg:w-[40%]">
+						<h4 className="text-xs capitalize font-bold text-orange self-start">
+							{storeCredentials.name}
+						</h4>
+						<h3 className="text-primary text-xl mb-4 font-bold self-start">
 							{storeCredentials.tagline}
 						</h3>
-						<p className="mb-4 text-accent text-sm">
-							{storeCredentials.featureText}
-						</p>
+						<p className="mb-4 text-sm">{storeCredentials.featureText}</p>
 						<PrimaryBtn link={'/auth/register'} text={'get started'} />
 					</div>
-					<div className="relative">
-						<Image src={storeCredentials.featuredImg} fill />
+					<div className="w-[90%] mx-auto relative h-[30rem] lg:w-[40%]">
+						<Image src={storeCredentials.featuredImg} fill loading="lazy" />
 					</div>
 				</article>
 			</section>
