@@ -10,7 +10,7 @@ export default function Profile() {
 			<Navbar />
 			<section className="min-h-[70vh]">
 				<h2>Hey {user.firstName}</h2>
-				<Link href={'store'} className="text-primary-dark">
+				<Link href={'create-store'} className="text-primary-dark">
 					Create your e-Store
 				</Link>
 			</section>
