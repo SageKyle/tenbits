@@ -1,12 +1,13 @@
 import Logo from '@/assets/images/tenbit-no-bg.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaArrowCircleUp } from 'react-icons/fa'
 
 export default function Footer() {
 	return (
-		<footer className="w-full px-10 pt-12 pb-2 bg-accent relative">
-			<div className="flex absolute top-4 right-10 text-primary text-3xl font-semibold font-mono cursor-pointer animate transition-all animate-pulse">
-				^
+		<footer className="w-full px-10 pt-12 pb-2 bg-accent text-white relative">
+			<div className="flex absolute top-4 right-10 text-primary text-3xl cursor-pointer animate transition-all animate-pulse">
+				<FaArrowCircleUp />
 			</div>
 			<section className="container flex justify-between gap-6 lg:w-[calc(100%-4rem)]">
 				<Link href={'/'}>

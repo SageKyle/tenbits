@@ -25,7 +25,7 @@ export default function Layout({ children, completed }) {
 
 			<div className="mt-6 mx-auto w-fit p-4">
 				<span>Having difficulty setting up your e-Store? </span>
-				<Link href={'store/feedback'} className="text-secondary">
+				<Link href={'store/feedback'} className="text-primary font-semibold">
 					Contact our team
 				</Link>
 			</div>
