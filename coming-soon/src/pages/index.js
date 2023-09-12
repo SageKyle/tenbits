@@ -1,12 +1,12 @@
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 //
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { FaCartArrowDown, FaStore } from 'react-icons/fa'
+import { FaStore } from 'react-icons/fa'
 
 export default function Home() {
 	return (
@@ -15,7 +15,7 @@ export default function Home() {
 				<title>TenBits e-Store</title>
 			</Head>
 			<main
-				className={`flex flex-col justify-between bg-slate-50 w-full min-h-screen ${inter.className}`}
+				className={`flex flex-col justify-between bg-slate-50 text-black w-full min-h-screen ${inter.className}`}
 			>
 				<Header />
 				<section className="p-10 max-w-2xl mx-auto font-sans relative">

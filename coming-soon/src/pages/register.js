@@ -49,9 +49,9 @@ export default function Register() {
 				<title>TenBits | e-Store Waitlist</title>
 			</Head>
 			<main
-				className={`flex flex-col bg-slate-50 w-full min-h-screen font-sans relative`}
+				className={`flex flex-col bg-slate-50 text-black w-full min-h-screen font-sans relative`}
 			>
-				<Header left={true} extraStyles={'fixed'} />
+				<Header left={true} extraStyles={'lg:fixed'} />
 				<section className="w-full relative">
 					<article className="hidden lg:flex flex-col items-start justify-center gap-4 mt-4 w-1/2 max-h-screen lg:fixed lg:top-24 bottom-0 left-0">
 						<h2 className="text-2xl font-bold text-[#222566] mb-2 lg:text-3xl self-center">
@@ -71,7 +71,7 @@ export default function Register() {
 					</article>
 					<form
 						onSubmit={onSubmit}
-						className=" flex flex-col max-w-xl mx-auto p-12 lg:mr-0 lg:ml-auto"
+						className="bg-inherit flex flex-col max-w-xl mx-auto p-12 lg:mr-0 lg:ml-auto"
 					>
 						<h4 className="text-xl font-bold mb-4">
 							Be the first to know when we launch
