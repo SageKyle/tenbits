@@ -11,11 +11,15 @@ import SuccessModal from '@/components/SuccessModal'
 import CountriesSelect from '@/components/countriesSelect'
 import useAddDoc from './api/addDoc'
 
+const feedbackPlaceholder =
+	'We have gotten a lot of feedback from several business owners on the kind of features they crave for. But we also want to hear from you.\nWhat features would you love us to add to your e-Store?\nHow can we make the platform more benefitial to you?'
+
 export default function Register() {
 	const [showModal, setShowModal] = useState(false)
 	const [formData, setFormData] = useState({
 		business: '',
 		firstName: '',
+		feedback: '',
 		lastName: '',
 		email: '',
 		phone: '',
@@ -47,23 +51,28 @@ export default function Register() {
 			<main
 				className={`flex flex-col bg-slate-50 w-full min-h-screen font-sans relative`}
 			>
-				<Header left={true} />
-				<section className="w-full gap-4 lg:grid grid-cols-2">
-					<article className="hidden lg:flex flex-col items-center justify-center gap-4 mt-4">
-						<h2 className="text-2xl font-bold text-[#222566] mb-2 lg:text-3xl">
+				<Header left={true} extraStyles={'fixed'} />
+				<section className="w-full relative">
+					<article className="hidden lg:flex flex-col items-start justify-center gap-4 mt-4 w-1/2 max-h-screen lg:fixed lg:top-24 bottom-0 left-0">
+						<h2 className="text-2xl font-bold text-[#222566] mb-2 lg:text-3xl self-center">
 							Join our waitlist!
 						</h2>
 						<div className="relative w-full h-4/5">
 							<Image
 								src={LaunchImage}
+								// height={350}
+								// width={150}
 								fill
 								loading="lazy"
 								alt="launching soon"
-								className="object-contain"
+								className="object-contain w-full h-auto"
 							/>
 						</div>
 					</article>
-					<form onSubmit={onSubmit} className="w-full max-w-xl mx-auto p-12">
+					<form
+						onSubmit={onSubmit}
+						className=" flex flex-col max-w-xl mx-auto p-12 lg:mr-0 lg:ml-auto"
+					>
 						<h4 className="text-xl font-bold mb-4">
 							Be the first to know when we launch
 						</h4>
@@ -133,8 +142,29 @@ export default function Register() {
 							<span>
 								country<sup className="text-red-600">*</sup>
 							</span>
-							<CountriesSelect onChange={handleChange} />
+							<select
+								className="w-full rounded-sm border-2 bg-transparent p-2"
+								id="country"
+								name="country"
+								required
+								onChange={handleChange}
+							>
+								<CountriesSelect />
+							</select>
 						</label>
+						<label className="flex flex-col gap-2 capitalize mb-5">
+							<div>
+								Feedback <span className="text-slate-400">optional</span>
+							</div>
+							<textarea
+								placeholder={feedbackPlaceholder}
+								name="feedback"
+								value={formData.feedback}
+								onChange={handleChange}
+								className="w-full h-36 rounded-sm border-2 bg-transparent p-2 resize-none"
+							/>
+						</label>
+
 						<button
 							disabled={isPending}
 							className={`w-full p-4 bg-black text-white font-bold text-xl capitalize ${
