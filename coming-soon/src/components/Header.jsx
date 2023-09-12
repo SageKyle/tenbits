@@ -18,6 +18,7 @@ export default function Header({ extraStyles, left }) {
 						src={Logo}
 						priority
 						fill
+						alt="TenBits"
 						className="w-fit h-full object-contain object-center"
 					/>
 				</div>
