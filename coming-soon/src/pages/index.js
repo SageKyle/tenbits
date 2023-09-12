@@ -15,7 +15,7 @@ export default function Home() {
 				<title>TenBits e-Store</title>
 			</Head>
 			<main
-				className={`flex flex-col justify-between bg-slate-50 text-black w-full min-h-screen ${inter.className}`}
+				className={`flex flex-col justify-between bg-slate-50 text-black w-full h-screen ${inter.className}`}
 			>
 				<Header />
 				<section className="p-10 max-w-2xl mx-auto font-sans relative">
@@ -71,7 +71,6 @@ export default function Home() {
 
 					<FaStore className="text-3xl text-[#04084A] opacity-50 hidden lg:inline-block absolute right-6 bottom-24" />
 
-					{/* <FaCartArrowDown className="text-3xl text-[#04084A] opacity-30 hidden lg:inline-block absolute right-36 bottom-0" /> */}
 					<h2 className="text-2xl text-center font-bold mb-3 lg:text-3xl">
 						Build Your Own Stunning Online Store <br /> in Minutes!
 					</h2>
