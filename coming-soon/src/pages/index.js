@@ -12,10 +12,15 @@ export default function Home() {
 	return (
 		<>
 			<Head>
+				<meta
+					name="description"
+					content="Customize, manage inventory, secure payments, and gain insights for growth. Launching soon!"
+				/>
+				<link rel="canonical" href="https://tenbits.vercel.app" />
 				<title>TenBits e-Store</title>
 			</Head>
 			<main
-				className={`flex flex-col justify-between bg-slate-50 text-black w-full h-screen ${inter.className}`}
+				className={`flex flex-col justify-between bg-slate-50 text-black w-full max-h-screen ${inter.className}`}
 			>
 				<Header />
 				<section className="p-10 max-w-2xl mx-auto font-sans relative">
@@ -75,9 +80,9 @@ export default function Home() {
 						Build Your Own Stunning Online Store <br /> in Minutes!
 					</h2>
 					<p className="">
-						Unlock your e-commerce potential with our user-friendly builder.
-						Customize, manage inventory, secure payments, and gain insights for
-						growth. Launching soon!
+						Unlock your e-commerce potential with our user-friendly ecommerce
+						store builder. Customize, manage inventory, secure payments, and
+						gain insights for growth. Launching soon!
 					</p>
 					<div className="flex items-center justify-center gap-4 font-semibold capitalize text-lg my-8">
 						{/* <Link
