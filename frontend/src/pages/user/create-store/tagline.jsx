@@ -34,7 +34,7 @@ export default function Tagline() {
 					</label>
 					<PrimaryBtn
 						styles="w-full mt-8 py-4 font-semibold text-lg"
-						link={'socials'}
+						link={'logo'}
 						text={'next'}
 					/>
 				</form>
