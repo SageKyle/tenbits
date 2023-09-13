@@ -8,7 +8,7 @@ export default function Store() {
 	return (
 		<Layout completed={'w-[1%]'}>
 			<section>
-				<article className="flex flex-col gap-5 w-full p-8">
+				<article className="flex flex-col items-center justify-center gap-4 bg-white mx-auto w-full max-w-lg p-8  shadow md:rounded-lg">
 					<h2>Hey {user.firstName}</h2>
 					<p>Let's guide you through setting up your e-Store</p>
 					<Link

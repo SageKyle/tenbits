@@ -10,7 +10,7 @@ export default function Tagline() {
 		<Layout completed={'w-[20%]'}>
 			<article className="flex flex-col items-center justify-center gap-4 bg-white mx-auto w-full max-w-[30rem] p-8  shadow-md md:rounded-lg">
 				<h1 className="text-2xl font-bold capitalize text-primary-dark mb-2">
-					tagline
+					slogan
 				</h1>
 				<p>
 					What makes your business/services stand out? Provide a short
