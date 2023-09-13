@@ -20,7 +20,7 @@ export default function Home() {
 				<title>TenBits e-Store</title>
 			</Head>
 			<main
-				className={`flex flex-col justify-between bg-slate-50 text-black w-full max-h-screen ${inter.className}`}
+				className={`flex flex-col justify-between bg-slate-50 text-black w-full max-h-screen h-[98svh] ${inter.className}`}
 			>
 				<Header />
 				<section className="p-10 max-w-2xl mx-auto font-sans relative">
