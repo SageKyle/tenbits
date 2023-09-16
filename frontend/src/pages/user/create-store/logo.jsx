@@ -9,14 +9,15 @@ export default function Logo() {
 	const [imageSrc, setImageSrc] = useState(null)
 
 	return (
-		<Layout completed={'w-[40%]'}>
+		<Layout completed={'w-[30%]'}>
 			<article className="flex flex-col items-center justify-center gap-4 bg-white mx-auto w-full max-w-[30rem] p-8  shadow-md md:rounded-lg">
 				<h1 className="text-2xl font-bold capitalize text-primary-dark mb-2">
 					logo
 				</h1>
 				<p>
-					A logo is an image that represents a company. It should be sharp and
-					simple enough to make it memorable, just like the Apple logo.
+					A logo is an image that represents your company. It should be sharp
+					and simple enough to make it memorable,{' '}
+					<i>just like the Apple logo.</i>
 				</p>
 				<p className="w-full flex flex-col">
 					Don't have a logo?
@@ -29,7 +30,7 @@ export default function Logo() {
 					<a
 						href="https://logo.com"
 						target="_blank"
-						referrerPolicy="noreferrer noopener"
+						rel="noreferrer noopener"
 						className="text-secondary flex items-center gap-1"
 					>
 						Click here to generate a logo for free <HiArrowTopRightOnSquare />
@@ -37,7 +38,7 @@ export default function Logo() {
 				</p>
 				<form className="w-full flex flex-col gap-4 mt-3">
 					<label className="flex flex-col space-y-2 w-full">
-						<span class="sr-only">Choose profile photo</span>
+						<span class="sr-only">Choose a business logo</span>
 						<input
 							type="file"
 							accept="image/*"
@@ -55,7 +56,7 @@ export default function Logo() {
 					</label>
 					<PrimaryBtn
 						styles="w-full mt-8 py-4 font-semibold text-lg"
-						link={'socials'}
+						link={'store-category'}
 						text={'next'}
 					/>
 				</form>
