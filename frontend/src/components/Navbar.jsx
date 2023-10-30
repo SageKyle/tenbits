@@ -36,7 +36,7 @@ export default function Navbar() {
 						<Link href={'/services'}>Services</Link>
 					</li>
 					<li className="hover:underline transition-all duration-200 ease-in-out">
-						<Link href={'/e-store'}>e-Store</Link>
+						<Link href={'/templates'}>Templates</Link>
 					</li>
 					<li className="hover:underline transition-all duration-200 ease-in-out">
 						<Link href={'/contact'}>Contact</Link>
